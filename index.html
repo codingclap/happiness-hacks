@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happiness Hacks</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
+
+    <style>
+        @font-face {
+            font-family: "museo100-regular";
+            src: url(infographics/fonts/museoSans100-regular.woff) format("woff"), 
+                url(infographics/fonts/museoSans100-regular.woff2) format("woff2");
+            font-style: normal;
+        }
+
+        [data-font-family="museo100-regular"] {
+            font-family: "museo100-regular";
+            font-weight: 100;
+        }
+
+        @font-face {
+            font-family: "museo300-regular";
+            src: url(infographics/fonts/museo300-regular.woff) format("woff"), url(infographics/fonts/museo300-regular.woff2) format("woff2");
+            font-style: normal;
+        }
+
+        [data-font-family="museo300-regular"] {
+            font-family: "museo300-regular";
+            font-weight: 300;
+        }
+
+        @font-face {
+            font-family: "museo500-regular";
+            src: url(infographics/fonts/museo500-regular.woff) format("woff"), url(infographics/fonts/museo500-regular.woff2) format("woff2");
+            font-style: normal;
+        }
+
+        [data-font-family="museo500-regular"] {
+            font-family: "museo500-regular";
+            font-weight: 500;
+        }
+
+        @font-face {
+            font-family: "museoSansRounded300";
+            src: url(infographics/fonts/museoSansRounded300.woff) format("woff"), url(infographics/fonts/museoSansRounded300.woff2) format("woff2");
+            font-style: normal;
+        }
+
+        [data-font-family="museoSansRounded300"] {
+            font-family: "museoSansRounded300";
+            font-weight: 300;
+        }
+
+        @font-face {
+            font-family: "museoSansRounded500";
+            src: url(infographics/fonts/museoSansRounded500.woff) format("woff"), url(infographics/fonts/museoSansRounded500.woff2) format("woff2");
+            font-style: normal;
+        }
+
+        [data-font-family="museoSansRounded500"] {
+            font-family: "museoSansRounded500";
+            font-weight: 500;
+        }
+
+        @font-face {
+            font-family: "museoSansRounded700";
+            src: url(infographics/fonts/museoSansRounded700.woff) format("woff"), url(infographics/fonts/museoSansRounded700.woff2) format("woff2");
+            font-style: normal;
+        }
+
+        [data-font-family="museoSansRounded700"] {
+            font-family: "museoSansRounded700";
+            font-weight: 700;
+        }
+    </style>
+    <style>
+        #happiness-hacks-interactive-id {
+            --heading-font-size-1: 7.6em;
+            --heading-font-size-2: 3.73em;
+            --heading-font-size-3: 2.95em;
+            --heading-font-size-4: 2.59em;
+            --paragraph-font-size-1: 1.69em;
+            --paragraph-font-size-2: 1.97em;
+            --paragraph-font-size-3: 1.32em;
+            --paragraph-font-size-4: 1.14em;
+            --button-font-size-1: 1.0em;
+            --special-font-size-1: 1.53em;
+            --special-font-size-2: 1.4em;
+        }
+
+        @media (max-width: 500px) {
+            #happiness-hacks-interactive-id {
+                --heading-font-size-1: 4.8em;
+                --heading-font-size-2: 2.25em;
+                --heading-font-size-3: 2.95em;
+                --heading-font-size-4: 2.59em;
+                --paragraph-font-size-1: 1.69em;
+                --paragraph-font-size-2: 1.97em;
+                --paragraph-font-size-3: 1.32em;
+                --paragraph-font-size-4: 1.14em;
+                --button-font-size-1: 1.0em;
+                --special-font-size-1: 1.53em;
+                --special-font-size-2: 1.4em;
+            }
+        }
+
+        [data-font-size="heading-1"] {
+            font-size: var(--heading-font-size-1);
+        }
+
+        [data-font-size="heading-2"] {
+            font-size: var(--heading-font-size-2);
+        }
+
+        [data-font-size="heading-3"] {
+            font-size: var(--heading-font-size-3);
+        }
+
+        [data-font-size="heading-4"] {
+            font-size: var(--heading-font-size-4);
+        }
+
+        [data-font-size="paragraph-1"] {
+            font-size: var(--paragraph-font-size-1);
+        }
+
+        [data-font-size="paragraph-2"] {
+            font-size: var(--paragraph-font-size-2);
+        }
+
+        [data-font-size="paragraph-3"] {
+            font-size: var(--paragraph-font-size-3);
+        }
+
+        [data-font-size="paragraph-4"] {
+            font-size: var(--paragraph-font-size-4);
+        }
+
+        [data-font-size="button-1"] {
+            font-size: var(--button-font-size-1);
+        }
+
+        [data-font-size="special-1"] {
+            font-size: var(--special-font-size-1);
+        }
+
+        [data-font-size="special-2"] {
+            font-size: var(--special-font-size-2);
+        }
+
+        #happiness-hacks-interactive-id {
+            --primary-color: #6a0d38ff;
+            --secondary-color: #f68e1eff;
+            --tertiary-color: #c6699aff;
+            --highlight-color: transparent;
+            --heading-color: #fff;
+            --paragraph-color: #fff;
+            --others-color-1: #7d164888;
+        }
+
+        #happiness-hacks-interactive-id {
+            --btn-bg-color: #f68e1eff;
+            --btn-text-color: #000;
+            --btn-border-color: #f68e1eff;
+            --btn-bg-color-hover: #f68e1e00;
+            --btn-text-color-hover: #f68e1eff;
+            --btn-border-color-hover: #f68e1eff;
+        }
+
+        [data-bg-color="primary"] {
+            background: var(--primary-color);
+        }
+
+        [data-bg-color="secondary"] {
+            background: var(--secondary-color);
+        }
+
+        [data-bg-color="tertiary"] {
+            background: var(--tertiary-color);
+        }
+
+        [data-color="primary"] {
+            color: var(--primary-color);
+        }
+
+        [data-color="secondary"] {
+            color: var(--secondary-color);
+        }
+
+        [data-color="tertiary"] {
+            color: var(--tertiary-color);
+        }
+    </style>
+    <style>
+        :where(#happiness-hacks-interactive-id),
+        :where(#happiness-hacks-interactive-id) * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            scroll-behavior: smooth;
+            text-align: center;
+        }
+
+        :where(section),
+        :where(section)>* {
+            margin: 0 auto;
+        }
+
+        [data-visible-only="mobile"] {
+            display: none !important;
+        }
+
+        @media (max-width: 500px) {
+            #happiness-hacks-interactive-id {
+                font-size: clamp(10px, 10px + 1vw, 20px);
+            }
+
+            [data-visible-only="mobile"] {
+                display: block !important;
+            }
+
+            [data-visible-only="tablet"] {
+                display: none !important;
+            }
+
+            [data-visible-only="pc"] {
+                display: none !important;
+            }
+
+            [data-visible-only="laptop"] {
+                display: none !important;
+            }
+        }
+
+        #happiness-hacks-interactive-id {
+            --header-height: 100px;
+            --container-max-width: 1280px;
+            --text-container-max-width: 1020px;
+
+            background: var(--primary-color);
+            padding-block: 5vh;
+            overflow: hidden;
+        }
+
+        [data-container-type="text"] {
+            width: min(90%, var(--text-container-max-width)) !important;
+            margin: auto;
+        }
+
+        :where(#happiness-hacks-interactive-id) :where(h1, h2, h3, h4, h5, h6) {
+            color: var(--heading-color);
+        }
+
+        :where(#happiness-hacks-interactive-id) :where(:not(h1, h2, h3, h4, h5, h6)) {
+            color: var(--paragraph-color);
+        }
+
+        :where(#happiness-hacks-interactive-id) :where(img) {
+            width: 100%;
+        }
+
+        :where(#happiness-hacks-interactive-id) .link,
+        :where(#happiness-hacks-interactive-id) .hyperlink {
+            cursor: pointer;
+            font-weight: bolder;
+            text-decoration: underline;
+            font-family: 'museoSansRounded700';
+        }
+
+        #happiness-hacks-interactive-id .happiness-hacks-interactive-header {
+            width: 100%;
+            height: var(--header-height, 10vh);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #happiness-hacks-interactive-id .happiness-hacks-interactive-header img {
+            height: 90%;
+            width: auto;
+        }
+
+        #happiness-hacks-interactive-id .happiness-hacks-interactive-content-container {
+            position: relative;
+            width: min(90%, var(--container-max-width, 1280px));
+            margin: auto;
+            min-height: calc(100vh - var(--header-height));
+            padding-block: 2em;
+        }
+
+        #happiness-hacks-interactive-id .happiness-hacks-interactive-content-container .happiness-hacks-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 1em;
+        }
+
+        #happiness-hacks-interactive-id .happiness-hacks-interactive-content-container #happiness-hacks-page-2 {
+            gap: 2em;
+        }
+    </style>
+    <style>
+        /* Desktop */
+        @media (min-width: 1150px) {
+            :root {
+                --font-size-p: 1.134em;
+                --font-size-p2: 1.3em;
+                --font-size-h1: 3.25em;
+                --font-size-h2: 2.8em;
+                --font-size-h3: 1.33em;
+                --font-size-h4: 1.35em;
+                --font-size-blockquote: 1.5em;
+                --font-size-button: 0.9375em;
+                --font-size-popup-button: 1.125em;
+                --font-size-input: 1.25em;
+
+                --line-height-p: 1.555em;
+                --line-height-h1: 1.05em;
+                --line-height-h2: 1.25em;
+                --line-height-h3: 1.25em;
+                --line-height-h4: 1.222em;
+                --line-height-blockquote: 1.458em;
+            }
+        }
+
+        /* Tablet */
+        @media (min-width: 550px) and (max-width: 1150px) {
+            :root {
+                --font-size-p: 1.134em;
+                --font-size-p2: 1em;
+                --font-size-h1: 3em;
+                --font-size-h2: 2.5em;
+                --font-size-h3: 1.5em;
+                --font-size-h4: 1.125em;
+                --font-size-blockquote: 1.5em;
+                --font-size-button: 0.9375em;
+                --font-size-popup-button: 1.125em;
+                --font-size-input: 1.25em;
+
+                --line-height-p: 1.555em;
+                --line-height-h1: 1.125em;
+                --line-height-h2: 1.25em;
+                --line-height-h3: 1.25em;
+                --line-height-h4: 1.222em;
+                --line-height-blockquote: 1.458em;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 550px) {
+            :root {
+                --font-size-p: 1em;
+                --font-size-p2: 1em;
+                --font-size-h1: 2.5em;
+                --font-size-h2: 1.625em;
+                --font-size-h3: 1.375em;
+                --font-size-h4: 1.125em;
+                --font-size-blockquote: 1.25em;
+                --font-size-button: 0.9375em;
+                --font-size-popup-button: 1.125em;
+                --font-size-input: 1.25em;
+
+                --line-height-p: 1.25em;
+                --line-height-h1: 1.25em;
+                --line-height-h2: 1.1538em;
+                --line-height-h3: 1.13636em;
+                --line-height-h4: 1.111em;
+                --line-height-blockquote: 1.25em;
+            }
+        }
+
+        :where(h1) {
+            font-size: var(--font-size-h1);
+            line-height: var(--line-height-h1);
+        }
+
+        :where(h2) {
+            font-size: var(--font-size-h2);
+            line-height: var(--line-height-h2);
+        }
+
+        :where(h3) {
+            font-size: var(--font-size-h3);
+            line-height: var(--line-height-h3);
+        }
+
+        :where(h4) {
+            font-size: var(--font-size-h4);
+            line-height: var(--line-height-h4);
+        }
+
+        :where(p) {
+            font-size: var(--font-size-p);
+            line-height: var(--line-height-p);
+        }
+
+        :where(blockquote) {
+            font-size: var(--font-size-blockquote);
+            line-height: var(--line-height-blockquote);
+        }
+
+        :where(button) {
+            font-size: var(--font-size-button);
+        }
+    </style>
+    <style>
+        .block-hidden {
+            display: none !important;
+        }
+
+        .anime-hidden {
+            animation: fadeOut 2s forwards;
+        }
+
+        .anime-visible {
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            to {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        @keyframes slideHorizontally {
+            0% {
+                transform: translateX(0px);
+            }
+
+            100% {
+                transform: translateX(-10px);
+            }
+        }
+    </style>
+    <style>
+        /* Circular icons widget */
+        .widget-circular-icons-type-1 {
+            --icon-container-size: clamp(150px, 15vw, 215px);
+        }
+
+        .widget-circular-icons-type-1 .main-container {
+            position: relative;
+            width: min(80vw, 700px);
+            aspect-ratio: 1/1;
+
+            margin: auto;
+            margin-top: calc(5vh + var(--icon-container-size, 150px) / 2);
+            margin-bottom: calc(15vh + var(--icon-container-size, 150px) / 2);
+        }
+
+        .widget-circular-icons-type-1 .main-container .circumferential-objects,
+        .widget-circular-icons-type-1 .main-container .circumferential-objects>div,
+        .widget-circular-icons-type-1 .main-container .center-object {
+            position: absolute;
+        }
+
+        .widget-circular-icons-type-1 .main-container .circumferential-objects {
+            width: 100%;
+            height: 100%;
+        }
+
+        .widget-circular-icons-type-1 .main-container .center-object {
+            width: min(90%, 400px);
+        }
+
+        .widget-circular-icons-type-1 .main-container .circumferential-objects .emotion {
+            width: var(--icon-container-size, 150px);
+            height: var(--icon-container-size, 150px);
+            cursor: pointer;
+        }
+
+        @media (max-width: 500px) {
+            .widget-circular-icons-type-1 .main-container {
+                position: relative;
+                width: min(90vw, 500px);
+                aspect-ratio: auto;
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 2em;
+                margin: auto;
+                margin-top: 3em;
+            }
+
+            .widget-circular-icons-type-1 .main-container .circumferential-objects {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                gap: 5em 1em;
+            }
+
+            .widget-circular-icons-type-1 .main-container .circumferential-objects,
+            .widget-circular-icons-type-1 .main-container .circumferential-objects>div,
+            .widget-circular-icons-type-1 .main-container .center-object {
+                position: initial;
+            }
+
+            .widget-circular-icons-type-1 .main-container .center-object {
+                width: min(100%, 400px);
+            }
+
+        }
+
+        .widget-circular-icons-type-1 .main-container .circumferential-objects>div .icon-container {
+            width: 100%;
+            height: 100%;
+            padding: 2em;
+            border: 2px solid var(--secondary-color);
+            border-radius: 50%;
+            margin-bottom: 0.5em;
+
+            transition: background-color 0.25s ease-in-out;
+        }
+
+        .widget-circular-icons-type-1 .main-container .circumferential-objects>div:hover .icon-container {
+            background-color: var(--secondary-color);
+        }
+
+        .widget-circular-icons-type-1 .main-container .circumferential-objects>div .icon-container img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .widget-circular-icons-type-1 .main-container .circumferential-objects {
+            --revolution-time: 100s;
+            animation: rotate-clockwise var(--revolution-time) linear forwards infinite;
+        }
+
+        .widget-circular-icons-type-1 .main-container .circumferential-objects:hover {
+            animation-play-state: paused;
+        }
+
+        .widget-circular-icons-type-1 .main-container .circumferential-objects>div {
+            animation: rotate-anticlockwise var(--revolution-time) linear forwards infinite;
+        }
+
+        .widget-circular-icons-type-1 .main-container .circumferential-objects:hover>div {
+            animation-play-state: paused;
+        }
+
+        @media (max-width: 500px) {
+
+            .widget-circular-icons-type-1 .main-container .circumferential-objects,
+            .widget-circular-icons-type-1 .main-container .circumferential-objects>div {
+                animation-play-state: paused;
+            }
+        }
+
+        @keyframes rotate-clockwise {
+            0% {
+                transform: rotate(0deg)
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rotate-anticlockwise {
+            0% {
+                transform: rotate(0deg)
+            }
+
+            50% {
+                transform: rotate(-180deg);
+            }
+
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+
+
+        /* Complimentary widget */
+
+        .widget-complimentary-type-1 {
+            --complimentary-gap: max(6vw, 2em);
+        }
+
+        .widget-complimentary-type-1 .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: normal;
+            gap: var(--complimentary-gap, 2em);
+            text-align: left;
+        }
+
+        @media (max-width: 800px) {
+            .widget-complimentary-type-1 .main-container {
+                flex-wrap: wrap;
+            }
+        }
+
+        .widget-complimentary-type-1 .main-container .complimentary-column {
+            flex: 1 1 100%;
+            border: 3px solid var(--secondary-color);
+            border-image-source: url(infographics/interactive-names/border-design.svg);
+            border-image-slice: 40;
+            border-image-width: 25px;
+            border-image-repeat: round;
+            border-image-outset: 0px;
+            padding: 2em 3em;
+            position: relative;
+            background-color: var(--others-color-1);
+        }
+
+        .widget-complimentary-type-1 .main-container .complimentary-column:last-child {
+            padding-top: 4em;
+        }
+
+        .widget-complimentary-type-1 .main-container .complimentary-column * {
+            text-align: left;
+        }
+    </style>
+    <style>
+        #happiness-hacks-interactive-id[data-background="first"] {
+            background-image: url("infographics/interactive-names/background/bg-circle.svg"),
+                url("infographics/interactive-names/background/bg-1.svg"),
+                url("infographics/interactive-names/background/bg-2.svg"),
+                url("infographics/interactive-names/background/bg-3.svg"),
+                url("infographics/interactive-names/background/bg-4.svg"),
+                url("infographics/interactive-names/background/bg-5.svg"),
+                url("infographics/interactive-names/background/bg-6.svg"),
+                url("infographics/interactive-names/background/bg-7.svg"),
+                url("infographics/interactive-names/background/bg-8.svg"),
+                url("infographics/interactive-names/background/bg-9.svg");
+
+            background-repeat: no-repeat;
+            background-position-x: center,
+                95%,
+                30%,
+                left,
+                right,
+                left,
+                left,
+                left,
+                80%,
+                right;
+            background-position-y: calc(100% - 10vh), 5%, top, 3%, 25%, 30%, 60%, bottom, bottom, bottom;
+            background-size: 80%, 7vw, 10vw, 7vw, 8vw, 7vw, 7vw, 10vw, 5vw, 10vw;
+        }
+
+        #happiness-hacks-interactive-id[data-background="second"] {
+            background-image: url("infographics/interactive-names/background/bg-circle.svg"),
+                url("infographics/interactive-names/background/bg-1.svg"),
+                url("infographics/interactive-names/background/bg-2.svg"),
+                url("infographics/interactive-names/background/bg-3.svg"),
+                url("infographics/interactive-names/background/bg-4.svg"),
+                url("infographics/interactive-names/background/bg-5.svg"),
+                url("infographics/interactive-names/background/bg-6.svg"),
+                url("infographics/interactive-names/background/bg-7.svg"),
+                url("infographics/interactive-names/background/bg-8.svg"),
+                url("infographics/interactive-names/background/bg-9.svg");
+
+            background-repeat: no-repeat;
+            background-position-x: center,
+                95%,
+                30%,
+                left,
+                right,
+                left,
+                left,
+                left,
+                80%,
+                right;
+            background-position-y: -63vh, 5%, top, -5%, 20%, 110%, 60%, bottom, bottom, bottom;
+            background-size: 60%, 6vw, 0vw, 7vw, 0vw, 10vw, 0vw, 0vw, 0vw, 15vw;
+        }
+
+        #happiness-hacks-interactive-id button,
+        #happiness-hacks-interactive-id .btn {
+            padding: 0.5em 1em;
+            border: 2px solid var(--btn-border-color);
+            background: var(--btn-bg-color);
+            color: var(--btn-text-color);
+            border-radius: 5px;
+
+            cursor: pointer;
+            transition: border 0.25s ease-in-out,
+                background 0.25s ease-in-out,
+                color 0.25s ease-in-out;
+        }
+
+        #happiness-hacks-interactive-id button:hover,
+        #happiness-hacks-interactive-id .btn:hover {
+            border: 2px solid var(--btn-border-color-hover);
+            background: var(--btn-bg-color-hover);
+            color: var(--btn-text-color-hover);
+        }
+
+        #happiness-hacks-interactive-id .divider-container {
+            margin-block: 1.5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            height: 2em;
+        }
+
+        #happiness-hacks-interactive-id .divider-container img {
+            height: 100% !important;
+            width: auto;
+        }
+
+        #happiness-hacks-interactive-id .divider-line {
+            width: 100%;
+            height: 2px;
+            background: #fff !important;
+            margin-block: 1em;
+        }
+
+        #happiness-hacks-interactive-id #happiness-hacks-page-2 [data-result="image"] {
+            width: 4em;
+            margin-right: 1em;
+        }
+
+        #happiness-hacks-interactive-id #happiness-hacks-page-2 .custom-list {
+            list-style: none;
+            margin-top: 1em;
+        }
+
+        #happiness-hacks-interactive-id #happiness-hacks-page-2 .custom-list li {
+            clear: left;
+            padding: 0.75em 2.25em;
+            position: relative;
+        }
+
+        #happiness-hacks-interactive-id #happiness-hacks-page-2 .custom-list li::before {
+            --marker-size: 1.5em;
+            content: " ";
+            width: var(--marker-size);
+            height: var(--marker-size);
+            position: absolute;
+            left: 0;
+            top: calc(var(--marker-size) * 0.4);
+            background-image: url(infographics/interactive-names/list-ticker.svg);
+            background-position: center;
+            background-size: contain;
+        }
+    </style>
+
+    <script>
+        async function sleep(s) {
+            return new Promise(resolve => setTimeout(resolve, s * 1000));
+        }
+
+        function reachIntoView(elementSelector) {
+            const element = document.querySelector(elementSelector);
+
+            options = {
+                behaviour: 'smooth',
+                block: 'center',
+                inline: 'center'
+            }
+
+            element.scrollIntoView(options)
+        }
+
+        function hyperlinkTo(href, relative = true, newWindow = true) {
+            let url;
+
+            if (relative) {
+                let currentUrl = window.location.href;
+
+                while (currentUrl.includes(href)) {
+                    currentUrl = currentUrl.replace(href, '');
+                }
+
+                url = currentUrl + href;
+
+            } else {
+                url = href;
+            }
+
+            if (newWindow) {
+                return window.open(url, '_blank');
+            } else {
+                return window.open(url, '_self');
+            }
+        }
+
+        function capitalize(string) {
+            return string.charAt(0).toUpperCase() + string.substring(1);
+        }
+
+        function isIn(key, array) {
+            for (let element of array) {
+                if (key == element) {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        function toggleStatus(element) {
+            let foot_title = document.getElementById('footer-title');
+            console.log(foot_title);
+            const currentStatus = element.dataset.status;
+
+
+            if (currentStatus == 'active') {
+                element.dataset.status = 'passive';
+                foot_title.style = "color:#FFD729";
+            } else {
+                element.dataset.status = 'active';
+                foot_title.style = "color:#fff";
+            }
+        }
+
+        function toggleElementsState(datasetName) {
+            const elements = document.querySelectorAll(`[data-toggle-state="${datasetName}"]`);
+            console.log(elements);
+            for (let element of elements) {
+                const action = element.dataset.toggleAction;
+
+                toggleStatus(element);
+            }
+        }
+    </script>
+    <script>
+        const interactiveData = {
+            stressed: {
+                image: "infographics/interactive-names/icons/stressed.svg",
+                mantra: 'Today, I release stress so I can be at peace.',
+                about: "Stress is harmful not only to your mental health but your physical health too. Think sleep loss, difficulty relaxing, and low self-esteem. Between work, relationships, money, and health concerns, there are no off-limit life areas that can trigger stress. Not sweating the small stuff sounds cute and all, but sometimes it's easier said than done. The good news is that you can kick this beastly emotion to the curb and find peace with the right mindset.",
+                tips: {
+                    statement: "5 Tips for Easing Stress",
+                    points: [
+                        "Deep yoga breathing.",
+                        "Reset and unwind with a guided meditation before bed.",
+                        "Talk it through with a trusted confidant or a Psychic.",
+                        "Exercise to release feel-good endorphins.",
+                        "If you can, take a day off for your mental health."
+                    ]
+                },
+                help: {
+                    statement: "Need support? <span data-result='link' class='hyperlink link'>Connect with a Psychic</span> to explore the bigger picture of your stress.",
+                    link: "https://www.psychicsource.com/"
+                }
+            },
+            lonely: {
+                image: "infographics/interactive-names/icons/lonely.svg",
+                mantra: 'Everyone deals with loneliness from time to time, and it always passes.',
+                about: "Have you ever felt alone in a crowded room? You're not the only one. Even the most social butterflies experience loneliness. Feeling lonely doesn't mean you're unworthy or unloved, not one bit! It's completely normal…you are human, after all! Think of loneliness as a call to action to set new intentions for your social life. By stepping out of your comfort zone (don't worry, you'll be great!), you will feel connected again and may discover a new passion or life path.",
+                tips: {
+                    statement: "5 Tips for Making Connections",
+                    points: [
+                        "Try something new such as a cooking class.",
+                        "Reach out to an old friend or colleague.",
+                        "Join a community such as a club or fitness group.",
+                        "Attend a local networking event.",
+                        "Share your feelings with a judgment-free confidant."
+                    ]
+                },
+                help: {
+                    statement: "You're never alone at PathForward. <span class='hyperlink link' data-result='link'>Talk to a Psychic</span> anytime, anywhere.",
+                    link: "https://www.psychicsource.com/"
+                }
+            },
+            heartbroken: {
+                image: "infographics/interactive-names/icons/heartbroken.svg",
+                mantra: 'I am worthy and deserving of love.',
+                about: "Heartbreak is all-consuming. Some even say that it's worse than physical pain. From loss to breakups and other life-shattering events, getting your mind off the pain may feel impossible, but you will get through it. And you'll be stronger on the other side. It's time to focus on your #1, you. Cue Sam Smith - learning how to “love me more” is the key to repairing a damaged heart. Remember, everything happens for a reason. This too shall pass!",
+                tips: {
+                    statement: "5 Tips for Healing a Broken Heart",
+                    points: [
+                        "Give yourself time to grieve.",
+                        "Do something that brings you joy.",
+                        "Focus on opening your heart chakra.",
+                        "Connect with a trusted support system.",
+                        "Practice daily gratitude journaling."
+                    ]
+                },
+                help: {
+                    statement: "Your intuitive support system is standing by! <span class='hyperlink link' data-result='link'>Talk to a Psychic</span> about your love life.",
+                    link: "https://www.psychicsource.com/"
+                }
+            },
+            jealous: {
+                image: "infographics/interactive-names/icons/jealous.svg",
+                mantra: 'Nobody is perfect. I am enough and have everything I need.',
+                about: "Hey, beautiful! Comparing yourself to others is a waste of your precious time and energy. You are perfect just the way you are. Say it OUT LOUD: I am perfect just the way I am! What do you love about yourself? What are you thankful for? Wearing your gratitude on your sleeve is body armor to the jealousy monster. Focus on your good, and remember, nobody is you, and that is YOUR power.",
+                tips: {
+                    statement: "5 Tips for Combating Jealousy",
+                    points: [
+                        "Write down gratitude statements.",
+                        "Give yourself extra self-love.",
+                        "Talk through your concerns.",
+                        "Positive self-talk – “I am successful.”",
+                        "Take a break from social media."
+                    ]
+                },
+                help: {
+                    statement: "Need a confidence boost? <span class='hyperlink link' data-result='link'>Talk to a Psychic</span> for feel-good advice.",
+                    link: "https://www.psychicsource.com/"
+                }
+            },
+            frustrated: {
+                image: "infographics/interactive-names/icons/frustrated.svg",
+                mantra: 'I get to choose what disturbs my peace.',
+                about: "The last thing you want to read when you're frustrated is to “calm down.” So, let it out! Take your time, process your emotions, and think it through. What is the source of your frustration? Can you talk it out, or are conflicting mindsets at play? Remember, you get to decide what you give life to. Is this frustration worth your energy? Finding a resolution outside or within yourself requires a little brain tennis but is well worth your peace of mind.",
+                tips: {
+                    statement: "5 Tips for Finding Peace",
+                    points: [
+                        "Take time to process your true feelings.",
+                        "Consider both sides and keep an open mind.",
+                        "Ask a Psychic for their perspective.",
+                        "Take space and alone time.",
+                        "Go for a walk or take a yoga class."
+                    ]
+                },
+                help: {
+                    statement: "Wondering why someone acted out in a certain way? <span class='hyperlink link' data-result='link'>Talk to a Psychic</span> for the truth.",
+                    link: "https://www.psychicsource.com/"
+                }
+            },
+            insecure: {
+                image: "infographics/interactive-names/icons/insecure.svg",
+                mantra: 'I believe in myself and my abilities.',
+                about: "You'd think that insecurity wouldn't be a thing past grammar school. Ugh. Unfortunately, this feeling can creep up at any point and sometimes carry through life. Insecurity triggers negative feelings of inadequacy or simply just not being good enough. Whether insecurity is inflicted by another person's actions, social media pressures, or personal opinions of oneself, it can be hard to break free. But with a narrative shift, you can, and you will boost your self-esteem.",
+                tips: {
+                    statement: "5 Ways to Regain Confidence",
+                    points: [
+                        "Focus on goal-setting and self-growth tactics.",
+                        "Be aware of your triggers and set boundaries.",
+                        "Take a break from social media.",
+                        "Write daily gratitude statements.",
+                        "Surrender to your fears."
+                    ]
+                },
+                help: {
+                    statement: "Need help overcoming insecurity? <span class='hyperlink link' data-result='link'>A Psychic can help you</span> work through your emotions.",
+                    link: "https://www.psychicsource.com/"
+                }
+            },
+            angry: {
+                image: "infographics/interactive-names/icons/angry.svg",
+                mantra: 'Anger does not hold me hostage. I choose to let go.',
+                about: "Do you need help finding peace? Or maybe forgiveness? Anger is straight-up toxic to your well-being. Whether you're mad at someone else or yourself, it's important to take action to find a resolution. Ever taken your anger out on a loved one just because? When anger is pushed under the rug, it's hard to find the sunshine. Take a deep breath. If you had time to process your anger and want to move forward, choose to let go today.",
+                tips: {
+                    statement: "5 Tips for Releasing Anger",
+                    points: [
+                        "Be honest and don't hold back.",
+                        "Candle burning or moonlight release rituals.",
+                        "Explosive exercises like kickboxing or dance.",
+                        "Guided meditations for finding peace.",
+                        "Forgiveness."
+                    ]
+                },
+                help: {
+                    statement: "Does your anger run deep? <span class='hyperlink link' data-result='link'>Talk to a Psychic</span> for additional support.",
+                    link: "https://www.psychicsource.com/"
+                }
+            },
+            guilty: {
+                image: "infographics/interactive-names/icons/guilty.svg",
+                mantra: 'I am ready to release and forgive myself and others.',
+                about: "Walking with guilt is like a looming dark cloud stealing away your sunshine. Guilt harms your spiritual health, causing chakra blockages and inhibiting personal growth. So, it's time to let it go and choose forgiveness. Forgive yourself so you can be free and think of guilt as a life lesson. What have you learned? What will you do differently next time? Lessons aren't always a bad thing. Sometimes they help you become the best version of yourself.",
+                tips: {
+                    statement: "5 Ways to Self-Forgive",
+                    points: [
+                        "Jot down what you've learned.",
+                        "Acceptance. Focus on the NOW.",
+                        "Honesty will set you free.",
+                        "Give yourself grace – you're human, after all.",
+                        "Make amends with your past."
+                    ]
+                },
+                help: {
+                    statement: "Do you need extra support? <span class='hyperlink link' data-result='link'>A Psychic can help you</span> find peace.",
+                    link: "https://www.psychicsource.com/"
+                }
+            },
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="happiness-hacks-interactive" id="happiness-hacks-interactive-id" data-background="first">
+        <div class="main-container-happiness-hacks">
+            <div class="happiness-hacks-interactive-header"><img src="infographics/interactive-names/logo.png"
+                    alt="logo"></div>
+            <div class="happiness-hacks-interactive-content-container">
+                <div class="happiness-hacks-page " id="happiness-hacks-page-1">
+                    <div class="happiness-hacks-block" data-container-type="text">
+                        <h1 data-font-size="heading-1" data-font-family="museo300-regular">
+                            Happiness Hacks
+                        </h1>
+                        <h2 data-font-size="heading-2" data-font-family="museo100-regular">
+                            Enhance Your Mood and Feel Better
+                        </h2>
+                        <div class="divider-container">
+                            <img src="infographics/interactive-names/divider.svg"
+                                alt="________________________________________________________________">
+                        </div>
+                        <p data-font-size="paragraph-1" data-font-family="museoSansRounded300">
+                            Life isn’t always rainbows and gumdrops. Nope. We all have bad days. From work
+                            stress to relationship issues or simply just not feeling yourself, addressing the source
+                            of your emotions and taking action to enhance your mood is much-needed and
+                            deserved self-love and care. So, if you’re ready to shake off the moody blues, we’re
+                            here to help with these Happiness Hacks!
+                        </p>
+                    </div>
+                    <div class="happiness-hacks-block">
+                        <div class="widget-circular-icons-type-1" id="circular-promo-1">
+
+                            <div class="main-container">
+                                <div class="circumferential-objects">
+                                    <div class="emotion" data-emotion="heartbroken">
+                                        <div class="icon-container">
+                                            <img src="infographics/interactive-names/icons/heartbroken.svg" alt="icon">
+                                        </div>
+                                        <div class="icon-title" data-font-size="special-1"
+                                            data-font-family="museoSansRounded500">
+                                            Heartbroken
+                                        </div>
+                                    </div>
+
+                                    <div class="emotion" data-emotion="lonely">
+                                        <div class="icon-container">
+                                            <img src="infographics/interactive-names/icons/lonely.svg" alt="icon">
+                                        </div>
+                                        <div class="icon-title" data-font-size="special-1"
+                                            data-font-family="museoSansRounded500">
+                                            Lonely
+                                        </div>
+                                    </div>
+
+                                    <div class="emotion" data-emotion="stressed">
+                                        <div class="icon-container">
+                                            <img src="infographics/interactive-names/icons/stressed.svg" alt="icon">
+                                        </div>
+                                        <div class="icon-title" data-font-size="special-1"
+                                            data-font-family="museoSansRounded500">
+                                            Stressed
+                                        </div>
+                                    </div>
+
+                                    <div class="emotion" data-emotion="guilty">
+                                        <div class="icon-container">
+                                            <img src="infographics/interactive-names/icons/guilty.svg" alt="icon">
+                                        </div>
+                                        <div class="icon-title" data-font-size="special-1"
+                                            data-font-family="museoSansRounded500">
+                                            Guilty
+                                        </div>
+                                    </div>
+
+                                    <div class="emotion" data-emotion="angry">
+                                        <div class="icon-container">
+                                            <img src="infographics/interactive-names/icons/angry.svg" alt="icon">
+                                        </div>
+                                        <div class="icon-title" data-font-size="special-1"
+                                            data-font-family="museoSansRounded500">
+                                            Angry
+                                        </div>
+                                    </div>
+
+                                    <div class="emotion" data-emotion="insecure">
+                                        <div class="icon-container">
+                                            <img src="infographics/interactive-names/icons/insecure.svg" alt="icon">
+                                        </div>
+                                        <div class="icon-title" data-font-size="special-1"
+                                            data-font-family="museoSansRounded500">
+                                            Insecure
+                                        </div>
+                                    </div>
+
+                                    <div class="emotion" data-emotion="frustrated">
+                                        <div class="icon-container">
+                                            <img src="infographics/interactive-names/icons/frustrated.svg" alt="icon">
+                                        </div>
+                                        <div class="icon-title" data-font-size="special-1"
+                                            data-font-family="museoSansRounded500">
+                                            Frustrated
+                                        </div>
+                                    </div>
+
+                                    <div class="emotion" data-emotion="jealous">
+                                        <div class="icon-container">
+                                            <img src="infographics/interactive-names/icons/jealous.svg" alt="icon">
+                                        </div>
+                                        <div class="icon-title" data-font-size="special-1"
+                                            data-font-family="museoSansRounded500">
+                                            Jealous
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center-object">
+                                    <h2 data-color="secondary" data-font-size="heading-3"
+                                        data-font-family="museoSansRounded700">
+                                        How are you feeling today?
+                                    </h2>
+                                    <p data-font-size="paragraph-2" data-font-family="museoSansRounded300">
+                                        Select your emotion for a pick-me-up.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="happiness-hacks-page block-hidden" id="happiness-hacks-page-2">
+                    <div class="happiness-hacks-block">
+                        <div class="widget-complimentary-type-1" id="complimentary-t1-1">
+                            <div class="main-container">
+                                <div class="complimentary-column">
+                                    <div>
+                                        <span>
+                                            <img src="infographics/interactive-names/icons/angry.svg" alt=""
+                                                data-result="image">
+                                        </span>
+                                        <span data-font-size="heading-4" data-font-family="museo500-regular">
+                                            Mantra
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <h3 data-color="secondary" data-font-size="special-2"
+                                            data-font-family="museoSansRounded700" data-result="mantra">
+                                            Today, I release stress so I can be at peace.
+                                        </h3>
+                                    </div>
+                                    <div class="divider-line">
+
+                                    </div>
+                                    <div>
+                                        <p data-font-size="paragraph-4" data-font-family="museoSansRounded300"
+                                            data-result="about">
+                                            Stress is harmful not only to your mental health but
+                                            your physical health too. Think sleep loss, difficulty
+                                            relaxing, and low self-esteem. Between work,
+                                            relationships, money, and health concerns, there are
+                                            no off-limit life areas that can trigger stress. Not
+                                            sweating the small stuff sounds cute and all, but
+                                            sometimes it’s easier said than done. The good news is
+                                            that you can kick this beastly emotion to the curb and
+                                            find peace with the right mindset.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="complimentary-column">
+                                    <h3 data-color="secondary" data-font-size="special-2"
+                                        data-font-family="museoSansRounded700" data-result="tips-statement">
+                                        5 Tips for Easing Stress
+                                    </h3>
+
+                                    <ul class="custom-list" data-result="tips-points">
+                                        <li data-font-size="paragraph-4" data-font-family="museoSansRounded300">
+                                            Deep yoga breathing.
+                                        </li>
+                                        <li data-font-size="paragraph-4" data-font-family="museoSansRounded300">
+                                            Reset and unwind with a guided meditation
+                                            before bed.
+                                        </li>
+                                        <li data-font-size="paragraph-4" data-font-family="museoSansRounded300">
+                                            Talk it through with a trusted confidant or a
+                                            Psychic.
+                                        </li>
+                                        <li data-font-size="paragraph-4" data-font-family="museoSansRounded300">
+                                            Exercise to release feel-good endorphins.
+                                        </li>
+                                        <li data-font-size="paragraph-4" data-font-family="museoSansRounded300">
+                                            If you can, take a day off for your mental health.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="happiness-hacks-block">
+                        <p data-font-size="paragraph-3" data-font-family="museoSansRounded300"
+                            data-result="help-statement">
+                            Need support? <b><u>Connect with a Psychic</u></b> to explore the bigger picture of your
+                            stress
+                        </p>
+                    </div>
+                    <div class="happiness-hacks-block">
+                        <button data-font-size="button-1" data-font-family="museoSansRounded500"
+                            id="interactive-reset-btn">Go Back to Main</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleClass(elementsSelectors) {
+            for (let i = 0; i < elementsSelectors.length; i++) {
+                const element = document.querySelector(elementsSelectors[i]);
+                if (element) {
+                    element.classList.toggle('block-hidden');
+                }
+            }
+        }
+
+        function toggleDataset(elementSelector, datasetName, toggleDataset) {
+            const element = document.querySelector(elementSelector);
+
+            if (element) {
+                for (let j = 0; j < toggleDataset.length; j++) {
+                    if (element.dataset[datasetName] == toggleDataset[j]) {
+                        if (j + 1 >= toggleDataset.length) {
+                            element.dataset[datasetName] = toggleDataset[0];
+                            break;
+                        } else {
+                            element.dataset[datasetName] = toggleDataset[j + 1];
+                            break;
+                        }
+
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        /* Circular icons widget */
+
+        function move2Center(element) {
+            const elementWidth = element.offsetWidth;
+            const elementHeight = element.offsetHeight;
+
+            element.style.left = `calc(50% - ${elementWidth}px / 2)`;
+            element.style.top = `calc(50% - ${elementHeight}px / 2)`;
+        }
+
+
+        function move2Circumference(element, angle, radius) {
+            const elementWidth = element.offsetWidth;
+            const elementHeight = element.offsetHeight;
+
+            console.log(elementWidth + " " + elementHeight)
+
+            const radianAngle = 2 * Math.PI * angle / 360
+
+            const xMovement = Math.cos(radianAngle) * radius;
+            const yMovement = Math.sin(radianAngle) * radius;
+
+            element.style.left = `calc(50% - ${elementWidth}px / 2 + ${xMovement}%)`;
+            element.style.top = `calc(50% - ${elementHeight}px / 2 - ${yMovement}%)`;
+        }
+
+        function moveElementsToCircle(elementsSelector, radius) {
+            const elements = document.querySelectorAll(elementsSelector);
+
+            const numElements = elements.length;
+            const angleIncrement = 360 / numElements;
+
+            let n = 0;
+
+            for (let element of elements) {
+                move2Circumference(element, angleIncrement * n, radius);
+                n++;
+            }
+        }
+    </script>
+    <script>
+        function updateImage(imageUrl, resultContainer) {
+            const image = resultContainer.querySelector('[data-result="image"]');
+            if (image) {
+                image.src = imageUrl;
+            } else {
+                console.error('Result Image Element not found');
+            }
+        }
+
+        function updateLink(link, resultContainer) {
+            const linkElement = resultContainer.querySelector('[data-result="link"]');
+            if (linkElement) {
+                linkElement.addEventListener('click', function () {
+                    hyperlinkTo(link, false)
+                });
+            } else {
+                console.error('Result Link Element not found');
+            }
+        }
+
+        function updateText(text, category, resultContainer) {
+            const textElement = resultContainer.querySelector(`[data-result="${category}"]`);
+            if (textElement) {
+                textElement.innerHTML = text;
+            } else {
+                console.error(`Result ${text} Element not found`);
+            }
+        }
+
+        function updateResult(selectedEmotion, data, resultContainerSelector) {
+            const resultContainer = document.querySelector(resultContainerSelector);
+            if (resultContainer) {
+                const emotionData = data[selectedEmotion];
+                if (emotionData) {
+                    // update image
+                    updateImage(emotionData.image, resultContainer);
+
+                    // update mantra
+                    updateText(emotionData.mantra, 'mantra', resultContainer);
+
+                    // update about
+                    updateText(emotionData.about, 'about', resultContainer);
+
+                    // update tips statement
+                    updateText(emotionData.tips.statement, 'tips-statement', resultContainer);
+
+                    // update tips points
+                    const points = resultContainer.querySelector('[data-result="tips-points"]').querySelectorAll('li');
+                    const resultPoints = emotionData.tips.points;
+                    for (let i = 0; i < points.length; i++) {
+                        points[i].innerHTML = resultPoints[i];
+                    }
+
+                    // update help
+                    updateText(emotionData.help.statement, 'help-statement', resultContainer);
+                    updateLink(emotionData.help.link, resultContainer);
+                }
+
+            } else {
+                console.error('Result Container Element not found');
+            }
+        }
+    </script>
+
+    <script>
+        // script to arrange the icons in circle
+        const centerObj = document.querySelector('#circular-promo-1 .main-container .center-object');
+
+        move2Center(centerObj)
+
+        const circumferentialElementsSelector = '#circular-promo-1 .main-container .circumferential-objects > div'
+
+        moveElementsToCircle(circumferentialElementsSelector, 50)
+    </script>
+
+    <script>
+        // script to add event listeners to the circular-promo
+        const promoElements = document.querySelectorAll('#happiness-hacks-interactive-id .emotion')
+        const frontSelector = '#happiness-hacks-interactive-id #happiness-hacks-page-1';
+        const resultContainerSelector = '#happiness-hacks-interactive-id #happiness-hacks-page-2';
+
+        for (let element of promoElements) {
+            element.addEventListener('click', function (e) {
+                const emotion = element.dataset.emotion;
+                updateResult(emotion, interactiveData, resultContainerSelector)
+                toggleClass([frontSelector, resultContainerSelector]);
+                toggleDataset('#happiness-hacks-interactive-id', 'background', ['first', 'second']);
+                reachIntoView('#happiness-hacks-interactive-id .happiness-hacks-interactive-header')
+            })
+        }
+
+        // Button event listener
+        const button = document.querySelector('#happiness-hacks-interactive-id #interactive-reset-btn');
+        button.addEventListener('click', function (e) {
+            toggleClass([frontSelector, resultContainerSelector]);
+            toggleDataset('#happiness-hacks-interactive-id', 'background', ['first', 'second']);
+            reachIntoView('#happiness-hacks-interactive-id .happiness-hacks-interactive-header')
+        });
+    </script>
+</body>
+
+</html>
